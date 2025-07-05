@@ -18,8 +18,21 @@
       }
 
       .img-produk {
-        max-height: 120px;
-        max-width: 120px;
+        max-height: 250px;
+        max-width: 250px;
+        object-fit: contain;
+      }
+
+      .img-produk-2 {
+        max-height: 300px;
+        max-width: 300px;
+        margin-top: -30px;
+        object-fit: contain;
+      }
+
+      .img-produk-3 {
+        max-height: 270px;
+        max-width: 270px;
         object-fit: contain;
       }
 
@@ -34,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(45deg, #4facfe, #00f2fe);
+      /* background: linear-gradient(45deg, #4facfe, #00f2fe); */
     }
 
       section {
@@ -126,9 +139,25 @@
 
       /* HOME */
       #home {
-        /* background: linear-gradient(135deg, #FF7D29 0%, #FFBF78 100%); */
+        position: relative;
         color: white;
+        padding: 100px 0;
+        z-index: 1;
+        overflow: hidden;
       }
+
+      #home::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: 
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('img/home.JPG') center center / cover no-repeat;
+        z-index: -1;
+      }
+
+
 
       .hero-title {
         font-family: 'Poppins', serif;
@@ -190,11 +219,92 @@
 
       /* ABOUT */
       #about {
-        background-color:  #ffffff;
+        /* background: linear-gradient(135deg, #FF7D29 0%, #ffa76d 100%); */
+        /* background: url('img/bg-about.png') center center/cover no-repeat; */
         color: white;
       }
 
-        .about-box {
+      #about h1 {
+        margin-top: 70px;
+        color: #e74c3c;
+      }
+
+      #about .card {
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+      
+      #about .card-img-top-wrapper {
+        height: 100px; 
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #about img{
+        width: 100%;
+      } 
+      
+      #about .card-img-top {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;     
+      }      
+      
+      #about .img-fluid {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      #about .card-body {        
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        margin: 0 auto;          
+        border-radius: 10px;
+        width: 80%;               
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #about .card-body.centered-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        text-align: center;
+      }
+
+      #about .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color: #e74c3c;
+      }
+      
+      #about .card-text {
+        font-size: 0.9rem;
+      }
+
+      #about .container p{
+        margin-top: 20px;
+        font-size: 15px;
+      }
+
+      .about-box {
         border: 2px solid #198754; /* warna outline hijau */
         border-radius: 50px;      
         padding: 30px;
@@ -203,7 +313,7 @@
       }
 
       .section-title {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Poppins', serif;
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
@@ -215,10 +325,21 @@
         opacity: 0.9;
       }
 
-      /* BERITA */
-      #berita {
-        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      .card-img-top {
+        object-fit: cover;
+        height: 100px; 
+        width: 100%; 
+        border-radius: 5px 5px 0 0;
+      }
+
+      /* PRODUK */
+      #produk {
+        background: linear-gradient(135deg, #ffc790 0%, #ffb062 100%);
         padding: 80px 0;
+      }
+
+      #produk h1 {
+        margin-top: 70px;
       }
 
       .card-berita {
@@ -230,16 +351,15 @@
       }   
 
       .card-body {
-        width: 250px;        /* ukuran fix horizontal */
-        height: 300px;       /* ukuran fix vertikal */
-        overflow: hidden;    /* menyembunyikan teks jika berlebih */
+        width: 250px;       
+        height: 200px;       
+        overflow: hidden;    
         text-overflow: ellipsis;
       }
       
       .card-berita:hover {
         box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         transform: translateY(-3px);
-
       }
 
       .card-berita .card-img-top {
@@ -267,7 +387,7 @@
       }
 
       /* KEGIATAN */
-      #kegiatan {
+      /* #kegiatan {
         background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
         padding: 80px 0;
       }
@@ -305,47 +425,72 @@
       .agenda-desc {
         color: #666;
         font-size: 0.9rem;
-      }
+      } */
 
       /* CONTACT */
       #contact {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+        /* background: url('img/bg-bottom.jpg') center center/cover no-repeat; */
         color: white;
-        padding: 80px 0;
       }
 
-      .contact-info h5 {
-        font-weight: 600;
-        margin-bottom: 1rem;
-        color: #fff;
+      #contact {
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
       }
 
-      .contact-info p, .contact-info li {
-        opacity: 0.9;
-        margin-bottom: 0.5rem;
+      #contact h1 {
+        margin-top: 15%;
       }
-
-      .contact-item h5 {
-        font-size: 1.1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.3rem;
+      
+      #contact .text-success{
+          font-size: 40px;
+          font-family: 'Playfair Display', sans-serif;
       }
-
-      .contact-item p {
-        margin-bottom: 0;
-        font-size: 0.95rem;
+      
+      #contact .col-md-3 h3{
+          font-size: 20px;
+          font-weight: 800;
+      }
+      
+      #contact .col-md-3 p{
+          font-size: 15px;
+          font-weight: 500;
+      }
+      
+      #contact .col-md-3 li{
+          font-size: 15px;
+          font-weight: 500;
+      }
+      
+      #contact .row{
+          margin-top: 5%;
+      }
+      
+      #contact .img-fluid{
+          width: 200px;
+      }
+            
+      .footer-bottom p {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500; 
+        cursor: default;
+        color: #e74c3c;
       }
 
       .footer-bottom {
-        background-color: rgba(0,0,0,0.2);
         text-align: center;
         padding: 20px 0;
-        margin-top: 40px;
-      }
-
-      .footer-bottom p {
-        margin: 0;
-        opacity: 0.8;
+        width: 100%;
+        margin-top: auto;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-top: 2px solid #e74c3c;
       }
 
       /* Responsive */
