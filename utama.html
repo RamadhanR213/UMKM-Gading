@@ -11,7 +11,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
   </head>
 
   <body>
@@ -91,7 +91,7 @@
       "
     >
       <div class="container text-center">
-        <h1 class="display-4 fw-bold ">Tentang Kami</h1>
+        <h1 class="display-4 fw-bold text-black">Tentang Kami</h1>
         <p class="lead fw-medium text-black">
             UMKM Gading RW.6 Rungkut Kidul merupakan unit usaha mikro yang bergerak di bidang pengolahan makanan beku (frozen food) 
             berbahan dasar ikan lele. Usaha ini berlokasi di wilayah RW.6 Kelurahan Rungkut Kidul, Kecamatan Rungkut, Kota Surabaya.
@@ -111,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4" id="about">
+          <div class="col-md-4 mb-4">
             <div class="card h-100 text-white">
               <div class="card-img-top-wrapper">
                 <img class="img-fluid" src="img/economi.jpg" class="card-img-top" alt="...">
@@ -136,7 +136,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- PRODUK KAMI -->
     <section id="produk" class="py-5 bg-dark">
@@ -200,6 +199,7 @@
                 <p class="card-text">Olahan lele gurih dan renyah, cocok untuk camilan sehat keluarga.</p>
                 <button 
                   class="btn btn-outline-primary"
+                  class="btn btn-sm btn-outline-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#produkModal"
                   onclick="showDetailProduk(
@@ -259,67 +259,72 @@
                     <p>Jangan ragu untuk menghubungi kami melalui platform berikut</p>
                   </div>
                   <div class="row justify-content-evenly text-center">
-            
+  
                     <!-- KANAN: SOSMED (ikon kiri, teks kanan) -->
-<div class="col-md-6 mb-4">
-  <div class="d-flex flex-column gap-4 justify-content-center h-100">
+                  <div class="col-md-6 mb-4">
+                  <div class="d-flex flex-column gap-4 justify-content-center h-100">
 
-    <!-- WhatsApp -->
-    <div class="d-flex align-items-center gap-3">
-      <img src="img/whatsapp.png" width="40" alt="WhatsApp">
-      <div>
-        <h5 class="fw-bold mb-1">WhatsApp</h5>
-        <p class="mb-0"><a href="https://wa.me/6281230783030" class="text-black text-decoration-none" target="_blank">0812-3078-3030</a></p>
-      </div>
-    </div>
-
-    <!-- Instagram -->
-    <div class="d-flex align-items-center gap-3">
-      <img src="img/instagram.png" width="40" alt="Instagram">
-      <div>
-        <h5 class="fw-bold mb-1">Instagram</h5>
-        <p class="mb-0"><a href="https://instagram.com/" class="text-black text-decoration-none" target="_blank">@umkmgading</a></p>
-      </div>
-    </div>
-
-    <!-- TikTok -->
-    <div class="d-flex align-items-center gap-3">
-      <img src="img/tik-tok.png" width="40" alt="TikTok">
-      <div>
-        <h5 class="fw-bold mb-1">TikTok</h5>
-        <p class="mb-0"><a href="https://tiktok.com/@" class="text-black text-decoration-none" target="_blank">@karangtaruna</a></p>
-      </div>
-    </div>
-
-    <!-- Telepon -->
-    <div class="d-flex align-items-center gap-3">
-      <img src="img/chat.png" width="40" alt="Telepon">
-      <div>
-        <h5 class="fw-bold mb-1">Telepon</h5>
-        <p class="mb-0"><a href="tel:081230783030" class="text-black text-decoration-none">0812-3078-3030</a></p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-          
-                    <div class="col-12 col-md-3 mb-4 mr-12">
-                      <div class="contact-item">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.195814499614!2d112.76716049999999!3d-7.3318924999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb6fa2a66779%3A0x2a4914debbced83b!2sUMKM%20GADING!5e0!3m2!1sid!2sid!4v1751630175753!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
+                  <!-- WhatsApp -->
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="img/whatsapp.png" width="40" alt="WhatsApp">
+                    <div>
+                      <h5 class="fw-bold mb-1">WhatsApp</h5>
+                      <p class="mb-0"><a href="https://wa.me/6281230783030" class="text-black text-decoration-none" target="_blank">0812-3078-3030</a></p>
                     </div>
-          
+                  </div>
+
+                  <!-- Instagram -->
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="img/instagram.png" width="40" alt="Instagram">
+                    <div>
+                      <h5 class="fw-bold mb-1">Instagram</h5>
+                      <p class="mb-0"><a href="https://instagram.com/" class="text-black text-decoration-none" target="_blank">@umkmgading</a></p>
+                    </div>
+                  </div>
+
+                  <!-- TikTok -->
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="img/tik-tok.png" width="40" alt="TikTok">
+                    <div>
+                      <h5 class="fw-bold mb-1">TikTok</h5>
+                      <p class="mb-0"><a href="https://tiktok.com/@" class="text-black text-decoration-none" target="_blank">@karangtaruna</a></p>
+                    </div>
+                  </div>
+
+                  <!-- Telepon -->
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="img/chat.png" width="40" alt="Telepon">
+                    <div>
+                      <h5 class="fw-bold mb-1">Telepon</h5>
+                      <p class="mb-0"><a href="tel:081230783030" class="text-black text-decoration-none">0812-3078-3030</a></p>
+                    </div>
                   </div>
                 </div>
+              </div>
+            <div class="col-12 col-md-3 mb-4 mr-12">
+              <div class="contact-item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.195814499614!2d112.76716049999999!3d-7.3318924999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb6fa2a66779%3A0x2a4914debbced83b!2sUMKM%20GADING!5e0!3m2!1sid!2sid!4v1751630175753!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div> 
+              </div>
               <div class="footer-bottom text-white">
                   <p>&copy; 2025 UMKM GADING RW.6 X AKAR BERAKSI | Membangun UMKM Digital</p>
               </div>
           </div>
       </section>
-
-
+    <!-- Bootstrap JS + Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showDetailProduk(nama, gambar, deskripsi, nomorWa) {
+        document.getElementById('produkModalLabel').textContent = nama;
+        document.getElementById('modalImg').src = gambar;
+        document.getElementById('modalContent').textContent = deskripsi;
+        
+        // Membuat link WhatsApp
+        const pesan = `Halo, saya ingin memesan produk: ${nama}`;
+        const linkWa = `https://wa.me/${nomorWa}?text=${encodeURIComponent(pesan)}`;
+        document.getElementById('waButton').href = linkWa;
+      }
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
