@@ -157,8 +157,6 @@
         z-index: -1;
       }
 
-
-
       .hero-title {
         font-family: 'Poppins', serif;
         font-size: 3.0rem;
@@ -351,7 +349,7 @@
       }   
 
       .card-body {
-        width: 250px;       
+        /* width: 250px;        */
         height: 200px;       
         overflow: hidden;    
         text-overflow: ellipsis;
@@ -386,53 +384,92 @@
         border-radius: 20px;
       }
 
-      /* KEGIATAN */
-      /* #kegiatan {
-        background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-        padding: 80px 0;
+      /* PARTNERS */
+      #partners .card-title{
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 10px;
+      }
+      
+      .card-text{
+          margin: 0;
+          color: #666;
+          font-size: 15px;
+          font-weight: 500;
+      }
+      
+      .display-4{
+          font-size: 25px;
+      }
+      
+      #partners .lead{
+          font-size: 15px;
+          margin-top: 10px;
+      }
+      
+      .card-img-top {
+          object-fit: cover;
+          height: 200px; 
+          width: 100%; 
+          border-radius: 5px 5px 0 0;
       }
 
-      .agenda-item {
-        background: white;
-        border-radius: 15px;
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-        transition: all 0.3s ease;
-        border-left: 5px solid #e74c3c;
-      }
-
-      .agenda-item:hover {
-        transform: translateX(10px);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      }
-
-      .agenda-date {
-        background-color: #e74c3c;
+      /* LOCATION */
+      #location {       
         color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 10px;
-        font-weight: 600;
-        display: inline-block;
-        margin-bottom: 1rem;
+        min-height: 50vh;
+        background-color: #ffe5ce;
       }
 
-      .agenda-title {
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        color: #333;
+      #location {
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      #location .text-success{
+          font-size: 40px;
+          font-family: 'Playfair Display', sans-serif;
       }
 
-      .agenda-desc {
-        color: #666;
-        font-size: 0.9rem;
-      } */
+      #location h1 {
+        margin-top: 5%;
+      }
+      
+      #location .col-md-4 h3{
+          font-size: 20px;
+          font-weight: 800;
+      }
+      
+      #location .col-md-3 p{
+          font-size: 15px;
+          font-weight: 500;
+      }
+      
+      #location .col-md-3 li{
+          font-size: 15px;
+          font-weight: 500;
+      }
+      
+      #location .row{
+          margin-top: 5%;
+      }
+      
+      #location .img-fluid{
+          width: 200px;
+      }
+      
 
       /* CONTACT */
       #contact {
         /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
         /* background: url('img/bg-bottom.jpg') center center/cover no-repeat; */
         color: white;
+        min-height: 500px;
       }
+      
 
       #contact {
         color: #000;
@@ -440,17 +477,17 @@
         flex-direction: column;
         width: 100%;
       }
+      
+      #contact .text{
+          font-size: 30px;
+          color: #e74c3c;
+      }
 
       #contact h1 {
-        margin-top: 15%;
+        margin-top: 5%;
       }
       
-      #contact .text-success{
-          font-size: 40px;
-          font-family: 'Playfair Display', sans-serif;
-      }
-      
-      #contact .col-md-3 h3{
+      #contact .col-md-4 h3{
           font-size: 20px;
           font-weight: 800;
       }
@@ -478,7 +515,7 @@
         font-size: 15px;
         font-weight: 500; 
         cursor: default;
-        color: #e74c3c;
+        color: #ffffff;
       }
 
       .footer-bottom {
@@ -490,7 +527,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        border-top: 2px solid #e74c3c;
+        background-color: #591f18;
       }
 
       /* Responsive */
