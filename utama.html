@@ -140,114 +140,114 @@
       </div>
     </section>
 
-    <!-- PRODUK KAMI -->
-    <section id="produk" class="py-5 bg-dark">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h1 class="section-title text-white">Produk Kami</h1>
-        </div>
-        <div class="row">
-          <!-- Contoh Satu Produk -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-berita">
-              <div class="produk-header">
-                <img src="img/dimsum.png" alt="Kerupuk Lele" class="img-produk">
-              </div>
-              <div class="card-body px-4">
-                <h5 class="card-title fw-bold mt-3">Tahu Bakso Lele</h5>
-                <p class="card-text text-muted">
-                  Olahan lele gurih dan renyah, cocok untuk camilan sehat keluarga. Olahan lele gurih dan renyah, cocok untuk camilan sehat keluarga.
-                </p>
-              
-                <button 
-                  class="btn btn-outline-warning w-100 mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#produkModal"
-                  onclick="showDetailProduk(
-                    'Kerupuk Lele',
-                    'img/logo.jpg',
-                    'Kerupuk Lele adalah kerupuk gurih berbahan dasar lele segar, diolah tanpa pengawet dan cocok untuk camilan sehari-hari.',
-                    '6281230783030'  
-                  )"
-                >Lihat Produk</button>
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card card-berita">
-              <div class="produk-header">
-                <img src="img/tahu.png" alt="Kerupuk Lele" class="img-produk-2">
-              </div>
-              <div class="card-body px-4">
-                <h5 class="card-title fw-bold mt-3">Tahu Bakso Lele</h5>
-                <p class="card-text text-muted">
-                  Olahan lele gurih dan renyah, cocok untuk camilan sehat keluarga. Olahan lele gurih dan renyah, cocok untuk camilan sehat keluarga.
-                </p>
-              
-                <button 
-                  class="btn btn-outline-warning w-100 mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#produkModal"
-                  onclick="showDetailProduk(
-                    'Kerupuk Lele',
-                    'img/logo.jpg',
-                    'Kerupuk Lele adalah kerupuk gurih berbahan dasar lele segar, diolah tanpa pengawet dan cocok untuk camilan sehari-hari.',
-                    '6281230783030'  
-                  )"
-                >Lihat Produk</button>
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card card-berita">
-              <div class="produk-header">
-                <img src="img/kripik.png" alt="Kerupuk Lele" class="img-produk-3">
-              </div>
-              <div class="card-body px-4">
-                <h5 class="card-title fw-bold mt-3">Tahu Bakso Lele</h5>
-                <p class="card-text text-muted">
-                  Olahan lele gurih dan renyah, cocok untuk camilan sehat keluarga. Olahan lele gurih dan renyah, cocok untuk camilan sehat keluarga.
-                </p>
-              
-                <button 
-                  class="btn btn-outline-warning w-100 mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#produkModal"
-                  onclick="showDetailProduk(
-                    'Kerupuk Lele',
-                    'img/logo.jpg',
-                    'Kerupuk Lele adalah kerupuk gurih berbahan dasar lele segar, diolah tanpa pengawet dan cocok untuk camilan sehari-hari.',
-                    '6281230783030'  
-                  )"
-                >Lihat Produk</button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MODAL PRODUK -->
-    <div class="modal fade" id="produkModal" tabindex="-1" aria-labelledby="produkModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center">
-          <div class="modal-header">
-            <h5 class="modal-title w-100" id="produkModalLabel">Detail Produk</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
-          </div>
-          <div class="modal-body">
-            <img id="modalImg" src="" alt="Gambar Produk" class="modal-img">
-            <p id="modalContent" class="text-start"></p>
-          </div>
-          <div class="modal-footer d-flex justify-content-between">
-            <a id="waButton" target="_blank" class="btn btn-success w-100">Pesan Sekarang via WhatsApp</a>
-          </div>
-        </div>
-      </div>
+<!-- PRODUK KAMI -->
+<section id="produk" class="py-5 bg-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="section-title text-white">Produk Kami</h1>
     </div>
+    <div class="row">
+
+      <!-- Produk 1: Dimsum Lele -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-berita">
+          <div class="produk-header">
+            <img src="img/dimsum.png" alt="Dimsum Lele" class="img-produk">
+          </div>
+          <div class="card-body px-4">
+            <h5 class="card-title fw-bold mt-3">Dimsum Lele</h5>
+            <p class="card-text text-muted">
+              Dimsum lezat berbahan dasar lele segar, cocok untuk camilan keluarga.
+            </p>
+            <a href="produk-detail.html?judul=Dimsum%20Lele&gambar=img/dimsum.png,img/logo.png,img/home.JPG&deskripsi=dimsum" class="btn btn-outline-warning w-100 mt-3">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 2: Tahu Bakso Lele -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-berita">
+          <div class="produk-header">
+            <img src="img/tahu.png" alt="Tahu Bakso Lele" class="img-produk-2">
+          </div>
+          <div class="card-body px-4">
+            <h5 class="card-title fw-bold mt-3">Tahu Bakso Lele</h5>
+            <p class="card-text text-muted">
+              Tahu isi bakso lele yang gurih dan renyah, ideal untuk bekal anak atau camilan sehat.
+            </p>
+            <a href="produk-detail.html?judul=Tahu%20Bakso%20Lele&gambar=img/tahu.png,img/logo.png,img/home.JPG&deskripsi=tahu" class="btn btn-outline-warning w-100 mt-3">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 3: Kerupuk Lele -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-berita">
+          <div class="produk-header">
+            <img src="img/kripik.png" alt="Kerupuk Lele" class="img-produk-3">
+          </div>
+          <div class="card-body px-4">
+            <h5 class="card-title fw-bold mt-3">Kerupuk Lele</h5>
+            <p class="card-text text-muted">
+              Kerupuk gurih dari lele asli, cocok dijadikan camilan atau pelengkap makanan.
+            </p>
+            <a href="produk-detail.html?judul=Kerupuk%20Lele&gambar=img/kripik.png,img/logo.png,img/home.JPG&deskripsi=kerupuk" class="btn btn-outline-warning w-100 mt-3">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 4: Lele Filet -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-berita">
+          <div class="produk-header">
+            <img src="img/filet.png" alt="Lele Filet" class="img-produk-4">
+          </div>
+          <div class="card-body px-4">
+            <h5 class="card-title fw-bold mt-3">Lele Filet</h5>
+            <p class="card-text text-muted">
+              Filet lele segar tanpa duri, mudah dimasak dan disukai anak-anak.
+            </p>
+            <a href="produk-detail.html?judul=Lele%20Filet&gambar=img/filet.png,img/logo.png,img/home.JPG&deskripsi=filet" class="btn btn-outline-warning w-100 mt-3">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 5: Lele Bumbu -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-berita">
+          <div class="produk-header">
+            <img src="img/bumbu.png" alt="Lele Bumbu" class="img-produk-5">
+          </div>
+          <div class="card-body px-4">
+            <h5 class="card-title fw-bold mt-3">Lele Bumbu</h5>
+            <p class="card-text text-muted">
+              Lele berbumbu siap saji, tinggal goreng atau panggang sesuai selera.
+            </p>
+            <a href="produk-detail.html?judul=Lele%20Bumbu&gambar=img/bumbu.png,img/logo.png,img/home.JPG&deskripsi=bumbu" class="btn btn-outline-warning w-100 mt-3">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 6: Pentol Lele -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-berita">
+          <div class="produk-header">
+            <img src="img/pentol.png" alt="Pentol Lele" class="img-produk-6">
+          </div>
+          <div class="card-body px-4">
+            <h5 class="card-title fw-bold mt-3">Pentol Lele</h5>
+            <p class="card-text text-muted">
+              Pentol kenyal dan gurih dari lele giling, cocok dikukus atau digoreng.
+            </p>
+            <a href="produk-detail.html?judul=Pentol%20Lele&gambar=img/pentol.png,img/logo.png,img/home.JPG&deskripsi=pentol" class="btn btn-outline-warning w-100 mt-3">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Bootstrap JS + Custom Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
