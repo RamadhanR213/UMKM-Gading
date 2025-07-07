@@ -192,6 +192,8 @@ section {
   cursor: pointer;
   transition: all 0.3s ease;
   margin-right: 1rem;
+  text-align: center;
+  display: inline-block;
 }
 
 .btn-primary-custom:hover {
@@ -213,6 +215,8 @@ section {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
 }
 
 .btn-outline-custom:hover {
@@ -811,7 +815,8 @@ section {
     font-size: 0.75rem;
     line-height: 1.3;
     margin-bottom: 0.5rem;
-    flex-grow: 1;    overflow: hidden;
+    flex-grow: 1;
+    overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
@@ -838,39 +843,190 @@ section {
   .produk-header {
     height: 140px;
   }
-  
+
   /* Fix for home section on small screens */
   #home .hero-title {
     font-size: 2.2rem;
   }
-  
+
   #home .hero-subtitle {
     font-size: 1rem;
   }
-  
-  .btn-primary-custom, .btn-outline-custom {
+
+  .btn-primary-custom,
+  .btn-outline-custom {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
   }
-  
+
   /* Adjust section titles for small screens */
   .section-title {
     font-size: 2rem;
   }
 }
 
-.konten-produk {
-  flex-grow: 1;
+/* Partners section styles */
+#partners .card {
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+#partners .card-body {
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 
-.card-body {
-  /* width: 250px;        */
+#partners .card-text {
+  flex-grow: 1;
+}
+
+#partners .btn {
+  margin-top: auto;
+}
+
+#partners .card-img-top {
   height: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  object-fit: cover;
+}
+
+/* Comprehensive mobile responsiveness for all devices */
+@media (max-width: 576px) {
+  section {
+    padding: 60px 0 !important;
+  }
+
+  #home {
+    padding: 80px 0 60px !important;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .btn-primary-custom,
+  .btn-outline-custom {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    display: block;
+    margin: 0.5rem auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  #produk .col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #produk .card-berita {
+    min-height: 330px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* Fix for partners section cards */
+  #partners .display-4 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #partners .card-body {
+    padding: 15px;
+  }
+
+  #partners .card-title {
+    font-size: 1rem;
+  }
+
+  #partners .card-text {
+    font-size: 0.85rem;
+  }
+
+  #partners .btn {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  /* Location and contact sections */
+  #location iframe {
+    height: 250px;
+  }
+
+  #location h3,
+  #contact h5 {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
+    padding: 15px 0;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+/* iPhone SE and very small devices */
+@media (max-width: 320px) {
+  #produk .col-6 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  #produk .card-berita {
+    min-height: 300px;
+  }
+
+  #produk .card-body {
+    height: 160px;
+    padding: 8px !important;
+  }
+
+  #produk .card-title {
+    font-size: 0.8rem;
+  }
+
+  #produk .card-text {
+    font-size: 0.7rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .img-produk,
+  .img-produk-2,
+  .img-produk-3,
+  .img-produk-4,
+  .img-produk-5,
+  .img-produk-6 {
+    max-height: 120px;
+    max-width: 120px;
+  }
+
+  .produk-header {
+    height: 120px;
+  }
+
+  #home .hero-title {
+    font-size: 1.6rem;
+  }
+
+  #partners .display-4 {
+    font-size: 1.6rem;
+  }
+
+  #partners .card-title {
+    font-size: 0.9rem;
+  }
+
+  #location h3,
+  #contact h5 {
+    font-size: 1.1rem;
+  }
 }
