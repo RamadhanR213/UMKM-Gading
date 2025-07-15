@@ -251,28 +251,7 @@
                 class="btn btn-produk-custom w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
                 Produk</button>
             </div>
-          </div>
-        </div> <!-- Produk 4: Lele Filet -->
-        <div class="col-6 col-md-4 mb-4">
-          <div class="card card-berita">
-            <div class="produk-header">
-              <img src="img/dimsum.png" alt="Lele Filet" class="img-produk-4">
-            </div>
-            <div class="card-body px-4">
-              <div class="konten-produk">
-                <h5 class="card-title fw-bold mt-3">Lele Filet</h5>
-                <p class="card-text text-muted">
-                  Filet lele segar tanpa duri, mudah dimasak dan disukai anak-anak.
-                </p>
-              </div>
-              <button onclick="showDetailProduk('Lele Filet', ['img/dimsum.png', 'img/home.JPG'], 'filet')"
-                class="btn btn-produk-custom w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
-                Produk</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produk 5: Lele Bumbu -->
+          </div>        </div> <!-- Produk 4: Lele Bumbu -->
         <div class="col-6 col-md-4 mb-4">
           <div class="card card-berita">
             <div class="produk-header">
@@ -290,9 +269,7 @@
                 Produk</button>
             </div>
           </div>
-        </div>
-
-        <!-- Produk 6: Pentol Lele -->
+        </div>        <!-- Produk 5: Pentol Lele -->
         <div class="col-6 col-md-4 mb-4">
           <div class="card card-berita">
             <div class="produk-header">
@@ -373,13 +350,11 @@
         <div class="col-md-6 d-flex flex-column justify-content-center">
           <h4 class="fw-bold text-uppercase text-muted mb-3">Lokasi</h4>
           <h3 class="fw-bold mb-4">Kami Siap Melayani.</h3>
-          <p class="text-muted mb-4">Jangan ragu menghubungi kami melalui informasi di bawah ini:</p>
-
-          <!-- WhatsApp -->
+          <p class="text-muted mb-4">Jangan ragu menghubungi kami melalui informasi di bawah ini:</p>          <!-- WhatsApp -->
           <div class="d-flex align-items-center mb-3">
             <img src="img/whatsapp.png" width="30" alt="WhatsApp" class="me-3">
-            <a href="https://wa.me/6281230783030" target="_blank" class="text-black text-decoration-none">
-              0812-3078-3030
+            <a href="https://wa.me/6285117567906" target="_blank" class="text-black text-decoration-none">
+              0851-1756-7906
             </a>
           </div>
 
@@ -397,13 +372,11 @@
             <a href="https://tiktok.com/@" target="_blank" class="text-black text-decoration-none">
               @karangtaruna
             </a>
-          </div>
-
-          <!-- Telepon -->
+          </div>          <!-- Telepon -->
           <div class="d-flex align-items-center mb-3">
             <img src="img/telephone.png" width="30" alt="Telepon" class="me-3">
-            <a href="tel:081230783030" class="text-black text-decoration-none">
-              0812-3078-3030
+            <a href="tel:085117567906" class="text-black text-decoration-none">
+              0851-1756-7906
             </a>
           </div>
         </div>
@@ -496,10 +469,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
+        </div>        <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <a href="https://wa.me/6281230783030" target="_blank" class="btn btn-success" id="waButton">Pesan
+          <a href="https://wa.me/6285117567906" target="_blank" class="btn btn-success" id="waButton">Pesan
             Sekarang!</a>
         </div>
       </div>
@@ -535,14 +507,9 @@
         • Cocok untuk segala usia<br>
         • Praktis dan mudah diolah`,
         komposisi: ['Tahu Premium', 'Daging lele giling', 'Tepung tapioka', 'Bawang Putih Goreng', 'Bawang Merah Goreng', 'Bawang Bombay', 'Daun Prey', 'Daun Seledri', 'Garam', 'Gula', ' Telur', 'Penyedap']
-      },
-      kerupuk: {
+      },      kerupuk: {
         deskripsi: `Kerupuk lele renyah khas UMKM Gading.<br>Tahan lama, cocok untuk oleh-oleh & camilan sehat.`,
         komposisi: ['Ikan lele', 'Tepung sagu', 'Telur ayam', 'Bawang merah', 'Bawang putih', 'Gula Pasir', 'Garam', 'Kaldu bubuk']
-      },
-      filet: {
-        deskripsi: `Lele filet segar tanpa tulang, siap masak untuk berbagai hidangan favorit keluarga.`,
-        komposisi: ['Ikan lele segar', 'Tanpa tulang', 'Dibersihkan higienis']
       },
       bumbu: {
         deskripsi: `Lele bumbu siap saji dengan rempah pilihan, tinggal goreng atau panggang.`,
@@ -590,11 +557,9 @@
           carousel.to(index);
         });
         modalThumbs.appendChild(thumb);
-      });
-
-      // Update WhatsApp link
+      });      // Update WhatsApp link
       const pesan = `Halo, saya ingin memesan produk: ${nama}`;
-      const linkWa = `https://wa.me/6281230783030?text=${encodeURIComponent(pesan)}`;
+      const linkWa = `https://wa.me/6285117567906?text=${encodeURIComponent(pesan)}`;
       document.getElementById('waButton').href = linkWa;
     }
 
