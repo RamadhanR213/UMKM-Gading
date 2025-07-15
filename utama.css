@@ -230,6 +230,7 @@ section {
 
 #home::before {
   display: none !important;
+}
 /* Responsive carousel home image */
 #homeCarousel .carousel-inner {
   width: 100%;
@@ -254,7 +255,6 @@ section {
     height: 22vh;
     max-height: 32vh;
   }
-}
 }
 
 .hero-title {
@@ -1780,8 +1780,7 @@ section {
     line-height: 1.4;
   }
 
-/* Button produk card warna hijau A4CD35 */
-/* Button produk card warna hijau tua untuk Lihat Produk */
+
 #produk .btn,
 #produk .btn.btn-outline-warning {
   color: #fff !important;
@@ -1805,8 +1804,6 @@ section {
   transform: translateY(-2px) scale(1.04);
 }
 }
-  }
-
   /* Product image adjustments for mobile */
   .img-produk,
   .img-produk-2,
@@ -1821,7 +1818,6 @@ section {
   .produk-header {
     height: 160px; /* Reduced header height for mobile */
   }
-}
 
 /* Specific optimization for 393x852 screen size (common mobile size) */
 @media (max-width: 393px) {

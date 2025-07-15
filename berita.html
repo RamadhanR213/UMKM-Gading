@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Informasi Terbaru - UMKM Gading</title>
+  <link rel="stylesheet" href="utama.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <style>
+    .logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .logo-title img {
+      width: 50px;
+    }
+
+    .logo-title h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      color: #333;
+    }
+
+    .slogan {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .berita-header {
+      background: linear-gradient(135deg, #0D5B10 0%, #A4CD35 100%);
+      color: white;
+      padding: 40px 0;
+      margin-top: 0;
+    }
+
+    .berita-content {
+      background: #fff;
+      padding: 40px 0;
+      min-height: 60vh;
+    }
+
+    .berita-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .berita-meta {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .berita-text {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    .back-button {
+      background-color: #0D5B10;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #0a470c;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .custom-wave-top svg,
+    .custom-wave-bottom svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: -1px;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+  <!-- Header -->
+  <div class="logo-title">
+    <img src="img/logo.png" alt="Logo UMKM Gading">
+    <h1>UMKM Gading</h1>
+  </div>
+  <p class="slogan">"Mengangkat Potensi Lokal, Mendorong Ekonomi Mandiri"</p>
+
+  <!-- Wave Atas -->
+  <div class="custom-wave-top">
+    <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#f8f9fa"
+        d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,101.3C1120,107,1280,117,1360,122.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+
+  <!-- Header Berita -->
+  <div class="berita-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-4 fw-bold mb-3" id="berita-judul">Informasi Terbaru</h1>
+          <p class="lead" id="berita-subtitle">Berita dan kegiatan terkini UMKM Gading</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konten Berita -->
+  <div class="berita-content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Tombol Kembali -->
+          <a href="index.html#partners" class="back-button mb-4 d-inline-block">
+            ← Kembali ke Beranda
+          </a>
+
+          <!-- Gambar Berita -->
+          <img id="berita-gambar" src="img/berita1.png" alt="Berita" class="berita-image">
+
+          <!-- Meta Informasi -->
+          <div class="berita-meta">
+            <span id="berita-tanggal">Tanggal tidak tersedia</span> |
+            <span id="berita-kategori">UMKM Gading</span>
+          </div>
+
+          <!-- Judul Artikel -->
+          <h2 class="fw-bold mb-4" id="artikel-judul">Judul Berita</h2>
+
+          <!-- Konten Artikel -->
+          <div class="berita-text" id="artikel-konten">
+            <p>Konten berita sedang dimuat...</p>
+          </div>
+
+          <!-- Tombol Bagikan atau Kembali -->
+          <div class="mt-5 text-center">
+            <a href="index.html#partners" class="back-button me-3">Kembali ke Beranda</a>
+            <a href="https://wa.me/6281230783030?text=Lihat%20berita%20terbaru%20UMKM%20Gading" target="_blank"
+              class="btn btn-success">
+              Bagikan via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave Bawah -->
+  <div class="custom-wave-bottom">
+    <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#f8f9fa"
+        d="M0,96L80,90.7C160,85,320,75,480,80C640,85,800,107,960,117.3C1120,128,1280,128,1360,128L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 UMKM GADING RW.6 X AKAR BERAKSI | Membangun UMKM Digital</p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    // Data berita
+    const dataBerita = {
+      pelatihan: {
+        judul: 'Pelatihan Pengolahan Kerupuk Bayam Lele',
+        tanggal: 'Selasa, 17 Juni 2025',
+        gambar: 'img/berita1.png',
+        kategori: 'Pelatihan & Pengembangan',
+        konten: `
+          <p class="lead">UMKM Gading mendapat kesempatan emas untuk mengikuti pelatihan pengolahan kerupuk bayam lele yang diselenggarakan oleh Dinas Kelautan, Perikanan, dan Pertanian (DKPP) Kota Surabaya.</p>
+
+          <p>Pelatihan ini merupakan hasil dari permohonan yang diajukan oleh POKDAKAN (Kelompok Pembudidaya Ikan) Gading kepada DKPP Kota Surabaya. Kegiatan ini bertujuan untuk meningkatkan inovasi dan diversifikasi produk olahan lele yang selama ini menjadi komoditas unggulan UMKM Gading.</p>
+
+          <h4 class="mt-4 mb-3">Materi Pelatihan</h4>
+          <p>Dalam pelatihan ini, para peserta UMKM Gading mendapat pengetahuan komprehensif tentang:</p>
+          <ul>
+            <li><strong>Teknik pengolahan kerupuk bayam lele</strong> - Metode pencampuran bayam dengan daging lele giling untuk menghasilkan kerupuk yang bergizi tinggi</li>
+            <li><strong>Standar kebersihan dan keamanan pangan</strong> - Prosedur higiene yang tepat dalam pengolahan makanan</li>
+            <li><strong>Teknik pengemasan dan penyimpanan</strong> - Cara mengemas produk agar tahan lama dan menarik konsumen</li>
+            <li><strong>Strategi pemasaran produk</strong> - Tips memasarkan produk inovatif ke pasar yang lebih luas</li>
+          </ul>
+
+          <h4 class="mt-4 mb-3">Manfaat Kerupuk Bayam Lele</h4>
+          <p>Inovasi kerupuk bayam lele ini memiliki nilai tambah yang signifikan:</p>
+          <ul>
+            <li><strong>Kaya nutrisi</strong> - Kombinasi protein tinggi dari lele dan vitamin A dari bayam</li>
+            <li><strong>Rasa unik</strong> - Perpaduan gurih lele dengan kesegaran bayam</li>
+            <li><strong>Warna menarik</strong> - Warna hijau alami dari bayam membuat produk lebih eye-catching</li>
+            <li><strong>Target pasar baru</strong> - Menarik konsumen yang peduli kesehatan dan gizi</li>
+          </ul>
+
+          <h4 class="mt-4 mb-3">Dampak Positif</h4>
+          <p>Pelatihan ini diharapkan dapat memberikan dampak positif bagi UMKM Gading dan masyarakat sekitar:</p>
+          <ul>
+            <li>Diversifikasi produk yang dapat meningkatkan pendapatan UMKM</li>
+            <li>Peningkatan skill dan pengetahuan anggota POKDAKAN Gading</li>
+            <li>Kontribusi terhadap program ketahanan pangan daerah</li>
+            <li>Pemberdayaan ekonomi masyarakat lokal</li>
+          </ul>
+
+          <p class="mt-4">UMKM Gading berkomitmen untuk terus berinovasi dan mengembangkan produk-produk berkualitas yang dapat bersaing di pasar lokal maupun nasional. Dukungan dari DKPP Kota Surabaya sangat berarti dalam perjalanan UMKM Gading menuju kemandirian ekonomi yang berkelanjutan.</p>
+        `
+      },
+      kunjungan: {
+        judul: 'Kunjungan dari DKPP Kota Surabaya',
+        tanggal: 'Kamis, 22 Mei 2025',
+        gambar: 'img/berita2.png',
+        kategori: 'Kunjungan & Monitoring',
+        konten: `
+          <p class="lead">UMKM Gading mendapat kehormatan dikunjungi oleh tim dari Dinas Kelautan, Perikanan, dan Pertanian (DKPP) Kota Surabaya yang dipimpin langsung oleh Bapak Edy selaku Kasi Budidaya.</p>
+
+          <p>Kunjungan ini merupakan bagian dari program monitoring dan evaluasi terhadap perkembangan UMKM yang bergerak di bidang perikanan di wilayah Kota Surabaya. UMKM Gading dipilih sebagai salah satu contoh UMKM yang berhasil mengembangkan produk olahan lele dengan inovasi dan kualitas yang baik.</p>
+
+          <h4 class="mt-4 mb-3">Agenda Kunjungan</h4>
+          <p>Selama kunjungan, tim DKPP Kota Surabaya melakukan beberapa kegiatan:</p>
+          <ul>
+            <li><strong>Review proses produksi</strong> - Pengamatan langsung terhadap proses pembuatan produk olahan lele</li>
+            <li><strong>Evaluasi fasilitas</strong> - Penilaian terhadap kelayakan dan kebersihan fasilitas produksi</li>
+            <li><strong>Diskusi pengembangan</strong> - Dialog mengenai rencana pengembangan UMKM ke depan</li>
+            <li><strong>Pemberian masukan</strong> - Saran dan rekomendasi untuk peningkatan kualitas produk</li>
+          </ul>
+
+          <h4 class="mt-4 mb-3">Hasil Kunjungan</h4>
+          <p>Dari kunjungan ini, beberapa hal positif berhasil dicapai:</p>
+          <ul>
+            <li><strong>Apresiasi tinggi</strong> dari DKPP terhadap inovasi dan kualitas produk UMKM Gading</li>
+            <li><strong>Komitmen dukungan</strong> berkelanjutan dari pemerintah daerah</li>
+            <li><strong>Rekomendasi sertifikasi</strong> untuk produk-produk unggulan UMKM Gading</li>
+            <li><strong>Kesempatan kerjasama</strong> dalam program-program DKPP ke depan</li>
+          </ul>
+
+          <h4 class="mt-4 mb-3">Ucapan Terima Kasih</h4>
+          <p>UMKM Gading mengucapkan terima kasih yang sebesar-besarnya kepada:</p>
+          <ul>
+            <li>Bapak Edy selaku Kasi Budidaya DKPP Kota Surabaya</li>
+            <li>Seluruh tim DKPP yang telah meluangkan waktu untuk berkunjung</li>
+            <li>POKDAKAN Gading yang telah memfasilitasi kunjungan ini</li>
+            <li>Masyarakat RW.6 yang telah mendukung kegiatan ini</li>
+          </ul>
+
+          <h4 class="mt-4 mb-3">Komitmen ke Depan</h4>
+          <p>Setelah kunjungan ini, UMKM Gading berkomitmen untuk:</p>
+          <ul>
+            <li>Terus meningkatkan kualitas dan standar produksi</li>
+            <li>Mengimplementasikan saran-saran yang telah diberikan</li>
+            <li>Menjalin kerjasama yang lebih erat dengan DKPP</li>
+            <li>Berkontribusi aktif dalam program-program pemerintah</li>
+          </ul>
+
+          <p class="mt-4">Kunjungan ini menjadi motivasi besar bagi UMKM Gading untuk terus berkarya dan berinovasi dalam mengembangkan produk olahan lele yang berkualitas. Dukungan dari pemerintah daerah memberikan semangat baru untuk menuju UMKM yang mandiri dan berkelanjutan.</p>
+        `
+      }
+    };
+
+    // Fungsi untuk mendapatkan parameter URL
+    function getURLParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Fungsi untuk menampilkan berita
+    function tampilkanBerita() {
+      const beritaId = getURLParameter('id');
+      const berita = dataBerita[beritaId];
+
+      if (berita) {
+        // Update judul halaman
+        document.title = `${berita.judul} - UMKM Gading`;
+
+        // Update konten
+        document.getElementById('artikel-judul').textContent = berita.judul;
+        document.getElementById('berita-tanggal').textContent = berita.tanggal;
+        document.getElementById('berita-kategori').textContent = berita.kategori;
+        document.getElementById('berita-gambar').src = berita.gambar;
+        document.getElementById('berita-gambar').alt = berita.judul;
+        document.getElementById('artikel-konten').innerHTML = berita.konten;
+
+        // Update header
+        document.getElementById('berita-judul').textContent = berita.judul;
+        document.getElementById('berita-subtitle').textContent = `${berita.tanggal} | ${berita.kategori}`;
+      } else {
+        // Jika berita tidak ditemukan
+        document.getElementById('artikel-judul').textContent = 'Berita Tidak Ditemukan';
+        document.getElementById('artikel-konten').innerHTML = `
+          <p>Maaf, berita yang Anda cari tidak ditemukan.</p>
+          <p><a href="index.html#partners" class="back-button">Kembali ke Beranda</a></p>
+        `;
+      }
+    }
+
+    // Jalankan fungsi saat halaman dimuat
+    document.addEventListener('DOMContentLoaded', tampilkanBerita);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
