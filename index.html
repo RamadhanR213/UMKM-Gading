@@ -78,14 +78,14 @@
                   <img src="img/home.jpg" class="d-block w-100 h-100" alt="Home 1"
                     style="object-fit:cover;width:100%;height:100%;border-radius:1.5rem;">
                 </div>
-                <div class="carousel-item h-100">
+                <!-- <div class="carousel-item h-100">
                   <img src="img/gading2.jpg" class="d-block w-100 h-100" alt="Home 2"
                     style="object-fit:cover;width:100%;height:100%;border-radius:1.5rem;">
                 </div>
                 <div class="carousel-item h-100">
                   <img src="img/gading1.jpg" class="d-block w-100 h-100" alt="Home 3"
                     style="object-fit:cover;width:100%;height:100%;border-radius:1.5rem;">
-                </div>
+                </div> -->
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev"
                 style="z-index:3;">
@@ -185,6 +185,7 @@
       </div>
     </div>
   </div>
+
   <!-- PRODUK KAMI -->
   <section id="produk" class="py-5 bg-dark">
     <div class="container">
@@ -193,20 +194,20 @@
       </div>
       <div class="row"> <!-- Produk 1: Dimsum Lele -->
         <div class="col-6 col-md-4 mb-4">
-          <div class="card card-berita">
+          <div class="card card-berita h-100">
             <div class="produk-header">
-              <img src="img/dimsum.png" alt="Dimsum Lele" class="img-produk">
+              <img src="img/dimsum1.png" alt="Dimsum Lele" class="img-produk">
             </div>
-            <div class="card-body px-4">
+            <div class="card-body px-4 d-flex flex-column">
               <div class="konten-produk">
                 <h5 class="card-title fw-bold mt-3">Dimsum Lele</h5>
                 <p class="card-text text-muted">
-                  Dimsum lezat berbahan dasar lele segar, cocok untuk camilan keluarga.
+                  Dimsum sehat dan lembut dari lele segar, nikmat untuk camilan maupun lauk praktis!
                 </p>
               </div>
               <button
-                onclick="showDetailProduk('Dimsum Lele', ['img/dimsum.png', 'img/logo.png', 'img/home.JPG'], 'dimsum')"
-                class="btn btn-produk-custom w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
+                onclick="showDetailProduk('Dimsum Lele', ['img/dimsum1.png', 'img/dimsum2.png', 'img/dimsum3.png', 'img/dimsum4.png', 'img/label_dimsum.png'], 'dimsum')"
+                class="btn btn-produk-custom w-100" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
                 Produk</button>
             </div>
           </div>
@@ -214,20 +215,20 @@
 
         <!-- Produk 2: Tahu Bakso Lele -->
         <div class="col-6 col-md-4 mb-4">
-          <div class="card card-berita">
+          <div class="card card-berita h-100">
             <div class="produk-header">
               <img src="img/tahu.png" alt="Tahu Bakso Lele" class="img-produk-2">
             </div>
-            <div class="card-body px-4">
+            <div class="card-body px-4 d-flex flex-column">
               <div class="konten-produk">
                 <h5 class="card-title fw-bold mt-3">Tahu Bakso Lele</h5>
                 <p class="card-text text-muted">
-                  Tahu isi bakso lele yang gurih dan renyah, ideal untuk bekal anak atau camilan sehat.
+                  Perpaduan tahu lembut dan bakso lele gurih, cocok untuk bekal maupun camilan sehat keluarga.
                 </p>
               </div>
               <button
-                onclick="showDetailProduk('Tahu Bakso Lele', ['img/tahu.png', 'img/logo.png', 'img/home.JPG'], 'tahu')"
-                class="btn btn-produk-custom w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
+                onclick="showDetailProduk('Tahu Bakso Lele', ['img/tahu.png', 'img/tahu2.png', 'img/label_tahubakso.png'], 'tahu')"
+                class="btn btn-produk-custom w-100" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
                 Produk</button>
             </div>
           </div>
@@ -235,61 +236,107 @@
 
         <!-- Produk 3: Kerupuk Lele -->
         <div class="col-6 col-md-4 mb-4">
-          <div class="card card-berita">
+          <div class="card card-berita h-100">
             <div class="produk-header">
-              <img src="img/kripik.png" alt="Kerupuk Lele" class="img-produk-3">
+              <img src="img/kerupuk.png" alt="Kerupuk Lele" class="img-produk-3">
             </div>
-            <div class="card-body px-4">
+            <div class="card-body px-4 d-flex flex-column">
               <div class="konten-produk">
                 <h5 class="card-title fw-bold mt-3">Kerupuk Lele</h5>
                 <p class="card-text text-muted">
-                  Kerupuk gurih dari lele asli, cocok dijadikan camilan atau pelengkap makanan.
+                  Kerupuk renyah berbahan ikan lele, gurih alami dan cocok untuk camilan atau pelengkap makan.
                 </p>
               </div>
               <button
-                onclick="showDetailProduk('Kerupuk Lele', ['img/kripik.png', 'img/logo.png', 'img/home.JPG'], 'kerupuk')"
-                class="btn btn-produk-custom w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
+                onclick="showDetailProduk('Kerupuk Lele', ['img/kerupuk.png', 'img/kerupuk2.png', 'img/kerupuk3.png', 'img/kerupuk4.png', 'img/label_kerupuk.png'], 'kerupuk')"
+                class="btn btn-produk-custom w-100" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
                 Produk</button>
             </div>
-          </div>        </div> <!-- Produk 4: Lele Bumbu -->
+          </div>        
+        </div> 
+        
+        <!-- Produk 4: Lele Bumbu -->
         <div class="col-6 col-md-4 mb-4">
-          <div class="card card-berita">
+          <div class="card card-berita h-100">
             <div class="produk-header">
-              <img src="img/dimsum.png" alt="Lele Bumbu" class="img-produk-5">
+              <img src="img/lelebumbu.png" alt="Lele Bumbu" class="img-produk-5">
             </div>
-            <div class="card-body px-4">
+            <div class="card-body px-4 d-flex flex-column">
               <div class="konten-produk">
                 <h5 class="card-title fw-bold mt-3">Lele Bumbu</h5>
                 <p class="card-text text-muted">
-                  Lele berbumbu siap saji, tinggal goreng atau panggang sesuai selera.
+                  Lele segar berbumbu rempah, praktis digoreng atau dipanggang. Solusi lauk lezat dan cepat!
                 </p>
               </div>
-              <button onclick="showDetailProduk('Lele Bumbu', ['img/dimsum.png', 'img/home.JPG'], 'bumbu')"
-                class="btn btn-produk-custom w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
+              <button onclick="showDetailProduk('Lele Bumbu', ['img/lelebumbu.png', 'img/lelebumbu2.png', 'img/lelebumbu3.png'], 'bumbu')"
+                class="btn btn-produk-custom w-100" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
                 Produk</button>
             </div>
           </div>
-        </div>        <!-- Produk 5: Pentol Lele -->
+        </div>        
+        
+        <!-- Produk 5: Bakso Lele -->
         <div class="col-6 col-md-4 mb-4">
-          <div class="card card-berita">
+          <div class="card card-berita h-100">
             <div class="produk-header">
-              <img src="img/dimsum.png" alt="Pentol Lele" class="img-produk-6">
+              <img src="img/bakso.png" alt="Bakso Lele" class="img-produk-6">
             </div>
-            <div class="card-body px-4">
+            <div class="card-body px-4 d-flex flex-column">
               <div class="konten-produk">
-                <h5 class="card-title fw-bold mt-3">Pentol Lele</h5>
+                <h5 class="card-title fw-bold mt-3">Bakso Ikan Lele</h5>
                 <p class="card-text text-muted">
-                  Pentol kenyal dan gurih dari lele giling, cocok dikukus atau digoreng.
+                  Bakso kenyal dari daging lele segar, gurih alami, cocok untuk sup, goreng, atau camilan anak.
                 </p>
               </div>
-              <button onclick="showDetailProduk('Pentol Lele', ['img/dimsum.png', 'img/home.JPG'], 'pentol')"
-                class="btn btn-produk-custom w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
+              <button onclick="showDetailProduk('Pentol Lele', ['img/bakso.png', 'img/bakso2.png', 'img/bakso3.png', 'img/label_bakso.png'], 'pentol')"
+                class="btn btn-produk-custom w-100" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
+                Produk</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 6: Lele Fillet-->
+        <div class="col-6 col-md-4 mb-4">
+          <div class="card card-berita h-100">
+            <div class="produk-header">
+              <img src="img/fillet.png" alt="Lele Fillet" class="img-produk-6">
+            </div>
+            <div class="card-body px-4 d-flex flex-column">
+              <div class="konten-produk">
+                <h5 class="card-title fw-bold mt-3">Lele Fillet</h5>
+                <p class="card-text text-muted">
+                  Lele fillet segar tanpa tulang, siap masak untuk berbagai hidangan keluarga. Praktis, higienis, dan kaya protein!
+                </p>
+              </div>
+              <button onclick="showDetailProduk('Lele Fillet', ['img/fillet.png', 'img/fillet2.png', 'img/fillet3.png', 'img/label_fillet.png'], 'filet')"
+                class="btn btn-produk-custom w-100" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
+                Produk</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 7: Kripik Kulit Lele-->
+        <div class="col-6 col-md-4 mb-4">
+          <div class="card card-berita h-100">
+            <div class="produk-header">
+              <img src="img/keripik.png" alt="Keripik Kulit Lele" class="img-produk-6">
+            </div>
+            <div class="card-body px-4 d-flex flex-column">
+              <div class="konten-produk">
+                <h5 class="card-title fw-bold mt-3">Keripik Kulit Lele</h5>
+                <p class="card-text text-muted">
+                  Keripik renyah dari kulit lele pilihan, gurih dan cocok untuk camilan sehat maupun teman makan.
+                </p>
+              </div>
+              <button onclick="showDetailProduk('Keripik Kulit Lele', ['img/keripik.png', 'img/keripik2.png', 'img/keripik3.png'], 'keripik')"
+                class="btn btn-produk-custom w-100" data-bs-toggle="modal" data-bs-target="#produkModal">Lihat
                 Produk</button>
             </div>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
   <!-- PARTNERS -->
@@ -369,8 +416,8 @@
           <!-- TikTok -->
           <div class="d-flex align-items-center mb-3">
             <img src="img/tik-tok.png" width="30" alt="TikTok" class="me-3">
-            <a href="https://tiktok.com/@" target="_blank" class="text-black text-decoration-none">
-              @karangtaruna
+            <a href="https://tiktok.com/@umkmgading06" target="_blank" class="text-black text-decoration-none">
+              @umkmgading06
             </a>
           </div>          <!-- Telepon -->
           <div class="d-flex align-items-center mb-3">
@@ -411,7 +458,7 @@
               <div class="col-md-2 mb-4 mt-3">
                 <h5 class="fw-bold">Support</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="text-decoration-none text-dark">Bantuan</a></li>
+                  <li><a href="https://wa.me/6285117567906" target="_blank" class="text-decoration-none text-dark">Bantuan</a></li>
                   <li><a href="#" class="text-decoration-none text-dark">Komunitas</a></li>
                 </ul>
               </div>
@@ -481,7 +528,33 @@
   <!-- Bootstrap JS + Custom Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>    // Product data
+    // Tutup offcanvas navbar saat link ditekan (mobile)
+    document.addEventListener('DOMContentLoaded', function () {
+      var offcanvasNavbar = document.getElementById('offcanvasNavbar');
+      if (offcanvasNavbar) {
+        var navLinks = offcanvasNavbar.querySelectorAll('.nav-link');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            var offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasNavbar);
+            offcanvas.hide();
+          });
+        });
+      }
+    });
     const dataProduk = {
+      keripik: {
+        deskripsi: `Keripik Kulit Lele adalah camilan inovatif berbahan dasar kulit lele pilihan yang diolah secara higienis hingga menjadi keripik super renyah.<br><br>
+        <strong>Keunggulan Produk:</strong><br>
+        • Renyah dan gurih, tanpa bau amis<br>
+        • Sumber protein dan kolagen alami<br>
+        • Tanpa bahan pengawet, aman untuk keluarga<br>
+        • Cocok untuk camilan sehat atau pelengkap makan nasi<br><br>
+        <strong>Cara Penyajian:</strong><br>
+        1. Siap makan langsung dari kemasan<br>
+        2. Dapat dijadikan topping pada nasi, mie, atau salad<br>
+        3. Simpan di tempat kering dan tertutup agar tetap renyah`,
+        komposisi: ['Kulit lele pilihan', 'Tepung bumbu', 'Bawang putih', 'Garam', 'Minyak goreng', 'Rempah alami']
+      },
       dimsum: {
         deskripsi: `Dimsum lele dengan resep spesial tanpa pengawet, siap disajikan kapan saja!<br><br>
         <strong>Keunggulan Produk:</strong><br>
@@ -501,24 +574,91 @@
       },
       tahu: {
         deskripsi: `Tahu Bakso Lele padat protein, dikukus sempurna tanpa bahan pengawet.<br><br>
-        <strong>Keistimewaan:</strong><br>
-        • Perpaduan tahu premium dengan bakso lele<br>
-        • Tekstur kenyal dan rasa yang gurih<br>
-        • Cocok untuk segala usia<br>
-        • Praktis dan mudah diolah`,
+        <strong>Keunggulan Produk:</strong><br>
+        • Perpaduan tahu premium dan bakso lele segar<br>
+        • Tekstur kenyal, rasa gurih alami<br>
+        • Tanpa bahan pengawet, aman untuk keluarga<br>
+        • Praktis, cocok untuk segala usia<br><br>
+        <strong>Cara Penyajian:</strong><br>
+        1. Kukus selama 10-15 menit hingga panas<br>
+        2. Bisa juga digoreng hingga kecoklatan<br>
+        3. Sajikan dengan saus sambal atau kecap<br><br>
+        <strong>Penyimpanan:</strong><br>
+        Simpan dalam freezer pada suhu -18°C, tahan hingga 2 bulan`,
         komposisi: ['Tahu Premium', 'Daging lele giling', 'Tepung tapioka', 'Bawang Putih Goreng', 'Bawang Merah Goreng', 'Bawang Bombay', 'Daun Prey', 'Daun Seledri', 'Garam', 'Gula', ' Telur', 'Penyedap']
-      },      kerupuk: {
-        deskripsi: `Kerupuk lele renyah khas UMKM Gading.<br>Tahan lama, cocok untuk oleh-oleh & camilan sehat.`,
+      },
+      kerupuk: {
+        deskripsi: `Kerupuk lele renyah khas UMKM Gading.<br><br>
+        <strong>Keunggulan Produk:</strong><br>
+        • Renyah, gurih, dan tidak amis<br>
+        • Mengandung protein ikan lele<br>
+        • Tahan lama, cocok untuk oleh-oleh & camilan sehat<br>
+        • Tanpa bahan pengawet<br><br>
+        <strong>Cara Penyajian:</strong><br>
+        1. Goreng dalam minyak panas hingga mengembang<br>
+        2. Tiriskan dan sajikan sebagai camilan atau pelengkap makan<br><br>
+        <strong>Penyimpanan:</strong><br>
+        Simpan di wadah tertutup dan kering agar tetap renyah`,
         komposisi: ['Ikan lele', 'Tepung sagu', 'Telur ayam', 'Bawang merah', 'Bawang putih', 'Gula Pasir', 'Garam', 'Kaldu bubuk']
       },
       bumbu: {
-        deskripsi: `Lele bumbu siap saji dengan rempah pilihan, tinggal goreng atau panggang.`,
+        deskripsi: `Lele bumbu siap saji dengan rempah pilihan, tinggal goreng atau panggang.<br><br>
+        <strong>Keunggulan Produk:</strong><br>
+        • Lele segar berbumbu rempah tradisional<br>
+        • Praktis, tinggal goreng atau panggang<br>
+        • Tanpa pengawet, rasa otentik<br>
+        • Cocok untuk lauk keluarga<br><br>
+        <strong>Cara Penyajian:</strong><br>
+        1. Goreng dalam minyak panas hingga matang dan kecoklatan<br>
+        2. Atau panggang di oven hingga harum<br>
+        3. Sajikan hangat dengan nasi<br><br>
+        <strong>Penyimpanan:</strong><br>
+        Simpan dalam freezer pada suhu -18°C, tahan hingga 1 bulan`,
         komposisi: ['Lele segar', 'Bumbu kuning', 'Rempah tradisional', 'Garam', 'Minyak']
       },
       pentol: {
-        deskripsi: `Pentol Lele nikmat bertekstur kenyal. Cocok dikukus atau digoreng!`,
+        deskripsi: `Bakso Ikan Lele (Pentol Lele) nikmat bertekstur kenyal, cocok dikukus atau digoreng!<br><br>
+        <strong>Keunggulan Produk:</strong><br>
+        • Terbuat dari daging lele segar pilihan<br>
+        • Tekstur kenyal, rasa gurih alami<br>
+        • Tanpa bahan pengawet<br>
+        • Kaya protein dan cocok untuk anak-anak<br><br>
+        <strong>Cara Penyajian:</strong><br>
+        1. Kukus bakso selama 10-15 menit hingga panas<br>
+        2. Bisa juga digoreng hingga kecoklatan<br>
+        3. Sajikan dengan kuah bakso, saus, atau sebagai camilan<br><br>
+        <strong>Penyimpanan:</strong><br>
+        Simpan dalam freezer pada suhu -18°C, tahan hingga 2 bulan`,
         komposisi: ['Daging lele halus', 'Tepung tapioka', 'Bawang putih', 'Bawang Merah Goreng', 'Bawang Putih Goreng', 'Merica', 'Penyedap', 'Putih Telur']
-      }
+      },
+      filet: {
+        deskripsi: `Lele fillet segar tanpa tulang, siap masak untuk berbagai hidangan favorit keluarga.<br><br>
+        <strong>Keunggulan Produk:</strong><br>
+        • 100% daging lele segar, tanpa tulang dan duri<br>
+        • Praktis, tinggal olah sesuai resep favorit<br>
+        • Higienis dan dikemas beku untuk menjaga kesegaran<br>
+        • Sumber protein tinggi, baik untuk keluarga<br><br>
+        <strong>Cara Penyajian:</strong><br>
+        1. Dapat digoreng, dipanggang, atau dimasak kuah<br>
+        2. Cocok untuk menu fillet crispy, asam manis, atau sup ikan<br><br>
+        <strong>Penyimpanan:</strong><br>
+        Simpan dalam freezer pada suhu -18°C, tahan hingga 3 bulan`,
+        komposisi: ['Daging lele segar pilihan', 'Tanpa tulang', 'Dibersihkan dan dipotong fillet', 'Dikemas higienis']
+      },
+      keripik: {
+        deskripsi: `Keripik Kulit Lele adalah camilan inovatif berbahan dasar kulit lele pilihan yang diolah secara higienis hingga menjadi keripik super renyah.<br><br>
+        <strong>Keunggulan Produk:</strong><br>
+        • Renyah dan gurih, tanpa bau amis<br>
+        • Sumber protein dan kolagen alami<br>
+        • Tanpa bahan pengawet, aman untuk keluarga<br>
+        • Cocok untuk camilan sehat atau pelengkap makan nasi<br><br>
+        <strong>Cara Penyajian:</strong><br>
+        1. Siap makan langsung dari kemasan<br>
+        2. Dapat dijadikan topping pada nasi, mie, atau salad<br><br>
+        <strong>Penyimpanan:</strong><br>
+        Simpan di tempat kering dan tertutup agar tetap renyah`,
+        komposisi: ['Kulit lele pilihan', 'Tepung bumbu', 'Bawang putih', 'Garam', 'Minyak goreng', 'Rempah alami']
+      },
     };
 
     function showDetailProduk(nama, gambarList, deskripsiKey) {
